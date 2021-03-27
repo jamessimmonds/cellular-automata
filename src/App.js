@@ -13,14 +13,25 @@ function App() {
 
   function handleRowsChange (e) {
     setRows(e.target.value);
+    setData(randomStart(rows, cols, proportion));
   }
 
   function handleColsChange (e) {
     setCols(e.target.value);
+    setData(randomStart(rows, cols, proportion));
   }
 
   function handleProportionChange (e) {
     setProportion(e.target.value);
+    setData(randomStart(rows, cols, proportion));
+  }
+
+  function handleStartButtonPush (e) {
+    setInterval(() => {
+      console.log("The animation has started!");
+      const nextFrame = iteration(data);
+      setData(nextFrame);
+    }, 500);
   }
 
   return (
@@ -51,7 +62,7 @@ function App() {
           <legend>Simulation</legend>
           <ul>
             <li>
-              <button>Start simulation</button>
+              <button type="button" onClick={handleStartButtonPush}>Start simulation</button>
             </li>
           </ul>
         </fieldset>
