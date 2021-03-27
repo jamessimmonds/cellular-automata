@@ -1,11 +1,15 @@
+import randomStart from "./utils/random-start.js";
 import Grid from './components/grid.js';
 import { useState } from 'react';
+import iteration from "./utils/rules.js";
 
 function App() {
 
   const [rows, setRows] = useState(30);
   const [cols, setCols] = useState(30);
   const [proportion, setProportion] = useState(0.5);
+
+  const [data, setData] = useState(randomStart(rows, cols, proportion));
 
   function handleRowsChange (e) {
     setRows(e.target.value);
@@ -52,7 +56,7 @@ function App() {
           </ul>
         </fieldset>
       </form>
-      <Grid rows={rows} cols={cols} proportion={proportion} />
+      <Grid rows={rows} cols={cols} proportion={proportion} data={data} />
     </div>
   );
 }
