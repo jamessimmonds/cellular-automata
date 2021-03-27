@@ -10,7 +10,7 @@ function Grid ( {rows, cols, proportion} ) {
     );
 
     return (
-        <div>
+        <div className="gridContainer">
             {gridRows}
         </div>
     )

@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+  margin: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+  
 div.gridSquareOff {
   height: 20px;
   width: 20px;
@@ -19,4 +26,47 @@ div.gridSquareOn {
 
 div.gridRow {
   padding: 0px;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+label {
+  display: inline-block;
+  width: 120px;
+  text-align: left;
+  margin-right: 20px;
+}
+
+form {
+  margin-top: 40px;
+  width: 400px;
+}
+
+li {
+  margin: 20px;
+}
+
+div.gridContainer {
+  margin-top: 30px;
+}
+
+legend {
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+button {
+  margin-top: 10px;
+  height: 40px;
+  width: 70px;
+  background-color: #70b1d6;
+  border: 1px solid rgb(212, 212, 212);
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
 }
