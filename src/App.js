@@ -3,7 +3,7 @@ import Grid from './components/grid.js';
 function App() {
   return (
     <div>
-      <Grid rows={50} cols={50} />
+      <Grid rows={40} cols={50} proportion={0.5} />
     </div>
   );
 }

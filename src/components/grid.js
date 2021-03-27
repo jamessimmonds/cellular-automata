@@ -1,9 +1,10 @@
+import randomStart from "../utils/random-start.js";
 import GridRow from "./grid-row.js";
 
-function Grid ( {rows, cols} ) {
+function Grid ( {rows, cols, proportion} ) {
 
-    const data = [[0,0,1],[0,1,1],[1,0,0]]
-
+    const data = randomStart(rows, cols, proportion);
+    
     const gridRows = data.map((row) => 
         <GridRow data={row} />
     );

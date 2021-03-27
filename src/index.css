@@ -3,6 +3,8 @@ div.gridSquareOff {
   width: 20px;
   border: 1px solid black;
   display: inline-block;
+  margin-right: -1px;
+  margin-bottom: -1px;
 }
 
 div.gridSquareOn {
@@ -11,4 +13,10 @@ div.gridSquareOn {
   border: 1px solid black;
   background-color: gray;
   display: inline-block;
+  margin-right: -1px;
+  margin-bottom: -1px;
+}
+
+div.gridRow {
+  padding: 0px;
 }
