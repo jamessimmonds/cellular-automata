@@ -44,6 +44,9 @@ label {
 form {
   margin-top: 40px;
   width: 400px;
+  display: inline-flex;
+  margin-right: 20px;
+  vertical-align: top;
 }
 
 li {
@@ -66,7 +69,7 @@ legend {
 button {
   margin-top: 10px;
   height: 40px;
-  width: 70px;
+  width: 150px;
   background-color: #70b1d6;
   border: 1px solid rgb(212, 212, 212);
   border-radius: 5px;

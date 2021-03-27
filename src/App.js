@@ -7,10 +7,6 @@ function App() {
   const [cols, setCols] = useState(30);
   const [proportion, setProportion] = useState(0.5);
 
-  function handleSubmit (e) {
-
-  }
-
   function handleRowsChange (e) {
     setRows(e.target.value);
   }
@@ -27,7 +23,7 @@ function App() {
     <div>
       <h1>Game of life</h1>
       <p>See page on <a href="https://en.wikipedia.org/wiki/Cellular_automaton">Wikipedia</a></p>
-      <form onSubmit={handleSubmit}>
+      <form>
         <fieldset>
           <legend>Controls</legend>
           <ul>
@@ -42,6 +38,16 @@ function App() {
             <li>
               <label for="proportion">Proportion 'on':</label>
               <input type="text" id="proportion" value={proportion} onChange={handleProportionChange}></input>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
+      <form>
+        <fieldset>
+          <legend>Simulation</legend>
+          <ul>
+            <li>
+              <button>Start simulation</button>
             </li>
           </ul>
         </fieldset>
