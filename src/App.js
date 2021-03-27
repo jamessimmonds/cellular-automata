@@ -2,12 +2,13 @@ import randomStart from "./utils/random-start.js";
 import Grid from './components/grid.js';
 import { useState } from 'react';
 import iteration from "./utils/rules.js";
+import useInterval from "./utils/use-interval.js";
 
 function App() {
 
   const [rows, setRows] = useState(30);
   const [cols, setCols] = useState(30);
-  const [proportion, setProportion] = useState(0.5);
+  const [proportion, setProportion] = useState(0.4);
 
   const [data, setData] = useState(randomStart(rows, cols, proportion));
 
@@ -26,8 +27,12 @@ function App() {
     setData(randomStart(rows, cols, e.target.value));
   }
 
-  function handleStartButtonPush (e) {
+  useInterval(() => {
     setData(iteration(data));
+  }, 200);
+
+  function handleStartButtonPush (e) {
+    setData(randomStart(rows, cols, proportion));
   }
 
   return (
@@ -58,7 +63,7 @@ function App() {
           <legend>Simulation</legend>
           <ul>
             <li>
-              <button type="button" onClick={handleStartButtonPush}>Next frame</button>
+              <button type="button" onClick={handleStartButtonPush}>Reset simulation</button>
             </li>
           </ul>
         </fieldset>
