@@ -28,15 +28,15 @@ function App() {
           <legend>Controls</legend>
           <ul>
             <li>
-              <label for="rows">Rows:</label>
+              <label htmlFor="rows">Rows:</label>
               <input type="text" id="rows" value={rows} onChange={handleRowsChange}></input>
             </li>
             <li>
-              <label for="cols">Columns:</label>
+              <label htmlFor="cols">Columns:</label>
               <input type="text" id="cols" value={cols} onChange={handleColsChange}></input>
             </li>
             <li>
-              <label for="proportion">Proportion 'on':</label>
+              <label htmlFor="proportion">Proportion 'on':</label>
               <input type="text" id="proportion" value={proportion} onChange={handleProportionChange}></input>
             </li>
           </ul>
