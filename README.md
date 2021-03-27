@@ -1,6 +1,6 @@
-# Game of Life
+## Game of Life
 
-## Introduction
+### Introduction
 
 This application implements Conway's game of life, which is a set of rules for cellular automata to follow. 
 
@@ -8,7 +8,7 @@ The published website is hosted [here](https://modest-galileo-c232a9.netlify.app
 
 You can read about Conway's game of life [here](https://en.wikipedia.org/wiki/Cellular_automaton#History).
 
-## Rules of the game
+### Rules of the game
 
 Each cell of a two-dimensional grid represents an automaton that follows the following four rules:
 
