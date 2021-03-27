@@ -29,7 +29,7 @@ function App() {
 
   useInterval(() => {
     setData(iteration(data));
-  }, 200);
+  }, 100);
 
   function handleStartButtonPush (e) {
     setData(randomStart(rows, cols, proportion));
