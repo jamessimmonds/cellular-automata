@@ -39,6 +39,7 @@ function App() {
     <div>
       <h1>Game of life</h1>
       <p>See page on <a href="https://en.wikipedia.org/wiki/Cellular_automaton">Wikipedia</a></p>
+      <p>Source on <a href="https://github.com/jamessimmonds/cellular-automata">Github</a></p>
       <form>
         <fieldset>
           <legend>Controls</legend>
