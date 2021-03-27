@@ -1,6 +1,6 @@
 import GridRow from "./grid-row.js";
 
-function Grid ( {rows, cols, proportion, data} ) {
+function Grid ( {data} ) {
     
     const gridRows = data.map((row, index) => 
         <GridRow key={index} data={row} />
