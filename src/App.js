@@ -3,9 +3,9 @@ import { useState } from 'react';
 
 function App() {
 
-  const [rows, setRows] = useState(40);
-  const [cols, setCols] = useState(50);
-  const [proportion, setProportion] = useState(0.7);
+  const [rows, setRows] = useState(30);
+  const [cols, setCols] = useState(30);
+  const [proportion, setProportion] = useState(0.5);
 
   return (
     <div>
@@ -17,15 +17,15 @@ function App() {
           <ul>
             <li>
               <label for="rows">Rows:</label>
-              <input type="text" id="rows"></input>
+              <input type="text" id="rows" value={rows}></input>
             </li>
             <li>
               <label for="cols">Columns:</label>
-              <input type="text" id="cols"></input>
+              <input type="text" id="cols" value={cols}></input>
             </li>
             <li>
               <label for="proportion">Proportion 'on':</label>
-              <input type="text" id="proportion"></input>
+              <input type="text" id="proportion" value={proportion}></input>
             </li>
             <li>
               <button type="submit">Update</button>
